@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewels Shop - FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jewels Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="payment.html">Payment</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer('q1')">What payment methods do you accept?</h3>
+                <p id="q1" style="display:none;">We accept Visa, Mastercard, American Express, and PayPal.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer('q2')">Do you offer custom jewelry?</h3>
+                <p id="q2" style="display:none;">Yes, we can create personalized jewelry based on your design.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer('q3')">What is the return policy?</h3>
+                <p id="q3" style="display:none;">You can return items within 30 days of purchase if they are in original condition.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jewels Shop</p>
+    </footer>
+</body>
+</html>
