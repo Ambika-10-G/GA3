@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewels Shop - Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function submitPayment(e) {
+            e.preventDefault();
+            alert("Payment Successful!");
+            window.location.href = "faq.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jewels Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="payment.html">Payment</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment">
+            <h2>Payment</h2>
+            <form onsubmit="submitPayment(event)">
+                <label for="name">Name on Card:</label>
+                <input type="text" id="name" required>
+
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" required>
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jewels Shop</p>
+    </footer>
+</body>
+</html>
